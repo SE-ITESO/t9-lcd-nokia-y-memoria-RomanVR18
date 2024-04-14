@@ -1,4 +1,8 @@
-
+/**
+ * @file    LCD_nokia.c
+ * @Description: This device driver has the functions to initialize the LCD display
+ * 				 and write information to it with SPI protocol.
+ */
 
 #include "fsl_gpio.h"
 #include "fsl_port.h"

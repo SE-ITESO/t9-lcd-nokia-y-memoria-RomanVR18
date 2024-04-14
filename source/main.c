@@ -7,7 +7,10 @@
 
 /**
  * @file    LCD_Nokia_EEPROM.c
- * @brief   Application entry point.
+ * @Authors: Román y Paulina
+ * @brief   This project is an application of the SPI protocol to communicate with an
+ * 			external memory to get the data bytes comprising an image bit map, to then
+ * 			show it on a LCD display also communicated by SPI.
  */
 #include <stdio.h>
 #include <stdbool.h>
@@ -17,11 +20,11 @@
 #include "S25FL164K.h"
 #include "LCD_nokia.h"
 #include "LCD_nokia_images.h"
-/* TODO: insert other include files here. */
 
-/* TODO: insert other definitions and declarations here. */
 /*
- * @brief   Application entry point.
+ * @brief   Data arrays for data of images to be used is read from the flash memory
+ * 			and PIT is initialized to wait 1 second to pass to the next image and show
+ * 			it on the LCD.
  */
 
 static uint8_t IMG1_DATA[IMAGE_DATA_SIZE] = {0};
