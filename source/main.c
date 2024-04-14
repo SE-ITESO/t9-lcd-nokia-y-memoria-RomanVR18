@@ -56,12 +56,12 @@ int main(void)
 	S25_SPI_Config();
 	LCD_SPI_Config();
 
-	LCD_nokia_init();
-
 	for(uint8_t i = 0; i < NUM_IMGS; i++)
 	{
 		S25_Read(IMG_ADDRS[i], IMG_DATA_ARRS[i]);
 	}
+
+	LCD_nokia_init();
 
 	LCD_nokia_clear();/*! It clears the information printed in the LCD*/
 
@@ -77,12 +77,25 @@ int main(void)
 		{
 			case 1:
 				LCD_nokia_bitmap(ITESO);
-			break;
+				break;
 			case 2:
 				LCD_nokia_bitmap(IMG1_DATA);
-			break;
+				break;
 			case 3:
-			break;
+				LCD_nokia_bitmap(IMG2_DATA);
+				break;
+			case 4:
+				LCD_nokia_bitmap(IMG3_DATA);
+				break;
+			case 5:
+				LCD_nokia_bitmap(IMG4_DATA);
+				break;
+			case 6:
+				LCD_nokia_bitmap(IMG5_DATA);
+				break;
+			default:
+				img_counter = 0;
+				break;
 		}
     }
 
