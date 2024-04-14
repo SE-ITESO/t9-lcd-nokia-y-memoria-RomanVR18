@@ -5,7 +5,7 @@
  * Generated linker script file for MK64FN1M0xxx12
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.9.0 [Build 2144] [2024-01-05] on 13 abr. 2024 17:32:18
+ * MCUXpresso IDE v11.9.0 [Build 2144] [2024-01-05] on 13 abr. 2024 18:35:27
  */
 
 INCLUDE "LCD_Nokia_EEPROM_Debug_library.ld"

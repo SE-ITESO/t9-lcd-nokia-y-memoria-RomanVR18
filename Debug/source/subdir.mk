@@ -6,6 +6,8 @@
 C_SRCS += \
 ../source/GPIO.c \
 ../source/LCD_nokia.c \
+../source/LCD_nokia_images.c \
+../source/PIT.c \
 ../source/S25FL164K.c \
 ../source/SPI.c \
 ../source/main.c \
@@ -14,6 +16,8 @@ C_SRCS += \
 C_DEPS += \
 ./source/GPIO.d \
 ./source/LCD_nokia.d \
+./source/LCD_nokia_images.d \
+./source/PIT.d \
 ./source/S25FL164K.d \
 ./source/SPI.d \
 ./source/main.d \
@@ -22,6 +26,8 @@ C_DEPS += \
 OBJS += \
 ./source/GPIO.o \
 ./source/LCD_nokia.o \
+./source/LCD_nokia_images.o \
+./source/PIT.o \
 ./source/S25FL164K.o \
 ./source/SPI.o \
 ./source/main.o \
@@ -40,7 +46,7 @@ source/%.o: ../source/%.c source/subdir.mk
 clean: clean-source
 
 clean-source:
-	-$(RM) ./source/GPIO.d ./source/GPIO.o ./source/LCD_nokia.d ./source/LCD_nokia.o ./source/S25FL164K.d ./source/S25FL164K.o ./source/SPI.d ./source/SPI.o ./source/main.d ./source/main.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o
+	-$(RM) ./source/GPIO.d ./source/GPIO.o ./source/LCD_nokia.d ./source/LCD_nokia.o ./source/LCD_nokia_images.d ./source/LCD_nokia_images.o ./source/PIT.d ./source/PIT.o ./source/S25FL164K.d ./source/S25FL164K.o ./source/SPI.d ./source/SPI.o ./source/main.d ./source/main.o ./source/semihost_hardfault.d ./source/semihost_hardfault.o
 
 .PHONY: clean-source
 

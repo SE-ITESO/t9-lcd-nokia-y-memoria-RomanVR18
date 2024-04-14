@@ -67,8 +67,10 @@ void PIT_set_interrupts();
 
 void PIT_callback_init(uint8_t (*handler)(bool is_on));
 void PIT1_callback_init(uint8_t (*handler)(bool is_on));
+bool PIT0_GetIRFlag();
 
 uint8_t PIT_IsActive();
+void PIT0_SetIRFlag(bool set);
 
 void PIT0_IR(void);
 void PIT1_IR(void);
