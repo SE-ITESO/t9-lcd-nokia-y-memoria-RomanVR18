@@ -1,0 +1,12 @@
+D:\Embebidos_BU\E4_T9\LCD_Nokia_EEPROM\drivers/fsl_gpio.h:191:20:GPIO_PortSet	16	static
+D:\Embebidos_BU\E4_T9\LCD_Nokia_EEPROM\drivers/fsl_gpio.h:206:20:GPIO_PortClear	16	static
+D:\Embebidos_BU\E4_T9\LCD_Nokia_EEPROM\drivers/fsl_port.h:374:20:PORT_SetPinMux	24	static
+../source/LCD_nokia.c:113:6:LCD_SPI_Config	16	static
+../source/LCD_nokia.c:118:6:LCD_nokia_init	16	static
+../source/LCD_nokia.c:144:6:LCD_nokia_bitmap	24	static
+../source/LCD_nokia.c:153:6:LCD_nokia_write_byte	32	static
+../source/LCD_nokia.c:170:6:LCD_nokia_send_char	24	static
+../source/LCD_nokia.c:182:6:LCD_nokia_send_string	16	static
+../source/LCD_nokia.c:187:6:LCD_nokia_clear	16	static
+../source/LCD_nokia.c:194:6:LCD_nokia_goto_xy	16	static
+../source/LCD_nokia.c:199:6:LCD_nokia_delay	16	static
