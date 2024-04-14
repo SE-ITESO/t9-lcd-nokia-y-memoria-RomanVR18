@@ -1,3 +1,8 @@
+/**
+ * @file    SPI.c
+ * @Description: This device driver uses sdk's dspi functions to set the transfer configuration
+ * 				 to use the SPI module.
+ */
 
 #include "SPI.h"
 #include "GPIO.h"

@@ -3,6 +3,9 @@
  *
  *  Created on: 13 abr. 2024
  *      Author: roman
+ * 		@Description: This device driver has the functions to configurate the SPI
+ * 					  settings to use the flash memory by SPI and get the readings
+ * 					  of the addresses desired.
  */
 
 #include "S25FL164K.h"
