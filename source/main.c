@@ -59,6 +59,7 @@ int main(void)
 	S25_SPI_Config();
 	LCD_SPI_Config();
 
+	/* Save in arrays the data of each image */
 	for(uint8_t i = 0; i < NUM_IMGS; i++)
 	{
 		S25_Read(IMG_ADDRS[i], IMG_DATA_ARRS[i]);
@@ -76,7 +77,7 @@ int main(void)
 			img_counter++;
 			PIT0_SetIRFlag(false);
 		}
-		switch(img_counter)
+		switch(img_counter) // Change images every time there's a PIT interruption
 		{
 			case 1:
 				LCD_nokia_bitmap(ITESO);
@@ -96,8 +97,10 @@ int main(void)
 			case 6:
 				LCD_nokia_bitmap(IMG5_DATA);
 				break;
+			case 7:
+				img_counter = 1;
+				break;
 			default:
-				img_counter = 0;
 				break;
 		}
     }

@@ -18,7 +18,8 @@ void S25_SPI_Config(void)
 void S25_Read(uint32_t image_addr, uint8_t *read_arr)
 {
 	dspi_half_duplex_transfer_t masterXfer;
-	uint8_t FuncCodeAndAddress[TRANSFER_SIZE] = {S25FL_READ_CODE, image_addr >> 16, (uint8_t) image_addr >> 8, (uint8_t) image_addr};
+	/* Sets the command and address array with the reading command and the address sent */
+	uint8_t FuncCodeAndAddress[TRANSFER_SIZE] = {S25FL_READ_CODE, image_addr >> 16, (uint8_t) (image_addr >> 8), (uint8_t) image_addr};
 
 	masterXfer.txData = FuncCodeAndAddress;
 	masterXfer.rxData = read_arr;
